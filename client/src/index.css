@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import "../node_modules/@syncfusion/ej2-react-grids/styles/material.css"; */
+@import url('https://cdn.syncfusion.com/ej2/material.css');
