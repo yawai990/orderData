@@ -1,5 +1,4 @@
 const moongose  = require('mongoose');
-const { db } = require('../models/customer');
 const massData =require('../models/customer');
 
 const getData =async (req,res)=>{

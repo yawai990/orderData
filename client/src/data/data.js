@@ -5,7 +5,76 @@ const gridEmployeeCountry = (props) => (
     <span>{props.address}</span>
   </div>
 );
-
+export const NincheGrid=[
+  {    
+    field:'shopName',
+    headerText:"ShopName",
+   width: '140',
+   textAlign: 'Center' 
+ },
+ {
+  field:'phoneNumber',
+  headerText:'Phone No:',
+    width: '110',
+    textAlign: 'Center',
+},  
+{
+  field:'blue',
+  headerText:'Blue',
+  width: '70',
+  textAlign: 'Center',
+  },
+{
+  field:'dark',
+  headerText:'Dark',
+  width: '70',
+  textAlign: 'Center',
+  },
+  {
+    field:'grape',
+    headerText:'Grape',
+    width: '75',
+    textAlign: 'Center',
+    },
+  {
+    field:'pome',
+    headerText:'Pome',
+    width: '75',
+    textAlign: 'Center',
+    },
+  {
+    field:'moji',
+    headerText:'Moji',
+    width: '70',
+    textAlign: 'Center',
+    },
+  {
+    field:'pina',
+    headerText:'Pina',
+    width: '70',
+    textAlign: 'Center',
+    },
+{ 
+  field:'sot',
+  headerText:"Sale of Types",
+  width: '120',
+  textAlign: 'Center'
+   },
+   { 
+   field:'date',
+   headerText:"Date",
+   width: '110',
+   format:'dMy',
+   textAlign: 'Center' 
+ },
+  { 
+   field:'address',
+   headerText:"Address",
+    width: '140',
+    textAlign: 'Center',
+    template:gridEmployeeCountry
+  },
+]
 export const ordersGrid = [
     {    
        field:'shopName',
@@ -46,7 +115,7 @@ export const ordersGrid = [
      { 
      field:'date',
      headerText:"Date",
-     width: '170',
+     width: '120',
      format:'dMy',
      textAlign: 'Center' 
    },
