@@ -16,6 +16,10 @@ app.use(cors());
 app.use('/mass',router);
 app.use('/ninche',nincherouter)
 
+app.get('/',(req,res)=>{
+    res.send('App is running')
+});
+
 const CONNECTION_URL = "mongodb+srv://yawai:yawaiaung100399@mass.1oe3o7i.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(CONNECTION_URL,{useNewUrlParser:true,useUnifiedTopology:true})

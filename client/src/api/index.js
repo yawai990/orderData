@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL ='http://localhost:5000';
+const URL ='https://bge2022.herokuapp.com';
 
 export const massData =()=>axios.get(URL + '/mass');
 export const addDataMass =(newData)=>axios.post(URL + '/mass',newData);

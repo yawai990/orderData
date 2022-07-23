@@ -15,7 +15,7 @@ export const NincheGrid=[
  {
   field:'phoneNumber',
   headerText:'Phone No:',
-    width: '110',
+    width: '140',
     textAlign: 'Center',
 },  
 {
