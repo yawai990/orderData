@@ -1,9 +1,7 @@
-  import React,{useState} from 'react';
+  import React from 'react';
   import Mass from './Mass';
   import Ninche from './Ninche';
   import { useStateContext } from '../../context/Context';
-
-
 
   const Form = () => {
 

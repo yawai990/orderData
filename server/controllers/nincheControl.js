@@ -24,4 +24,45 @@ const addData =async(req,res)=>{
     }
 };
 
-module.exports ={getData,addData}
+const updateData = async (req,res)=>{
+
+    const {id} = req.params;
+
+        //getting the update data from client
+    const data = req.body
+
+    const updatedData = await nincheData.findByIdAndUpdate(id,{...data,id},{new:true});
+
+    if(!mongoose.Types.ObjectId.isValid(id)) return res.status(404).json({message:'no post with that id'})
+
+    res.json(updatedData)
+}
+
+const deleteData = async (req,res)=>{
+
+    const {id} = req.params;
+
+    const deletedData = await nincheData.findByIdAndDelete(id,{...data,id},{new:true})
+
+    if(!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send('no post with that id')
+
+    res.json({message:'Data deleted successfully'})
+}
+const getByname = async(req,res)=>{
+    const {name} = req.params;
+    try {
+        const getAll = await nincheData.find();
+        
+        const filterData= await getAll.filter(data=>{
+        
+           if(data.shopName.toLowerCase() === name.toLowerCase()){
+            return data
+           }
+        })
+        return filterData
+    } catch (error) {
+        res.status(404).json({message:error.message})
+    }
+}
+
+module.exports ={getData,addData,getByname,deleteData,updateData};

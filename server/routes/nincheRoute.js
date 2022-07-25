@@ -1,8 +1,11 @@
 const express = require('express');
 const nincherouter  = express.Router();
-const {getData,addData} = require('../controllers/nincheControl');
+const {getData,addData,getByname,deleteData,updateData} = require('../controllers/nincheControl');
 
 nincherouter.get('/',getData)
-                .post('/',addData);
+                    .get('/:name',getByname)
+                    .post('/',addData)
+                    .patch('/:id',updateData)
+                    .delete('/:id',deleteData)
 
 module.exports = nincherouter;

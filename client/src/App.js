@@ -2,7 +2,7 @@ import React from "react";
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
 import {Form,Sidebar} from './components';
-import {Ninche,Mass} from './pages';
+import {Ninche,Mass,Contact,Home} from './pages';
 import { useStateContext } from "./context/Context";
 
 const App =()=>{
@@ -21,10 +21,12 @@ const App =()=>{
                     </button>   
                     </div>
             <Routes>
-                <Route path="/" element={<Mass />} />
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/mass" element={<Mass />} />
                 <Route path="/ninche" element={<Ninche />} />
                 <Route path="/form" element={<Form />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
             </div>
             </div>

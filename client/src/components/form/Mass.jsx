@@ -19,8 +19,7 @@ const Mass = () => {
         e.preventDefault()
   
       await addDataMass(customerData)
-      clear()
-      // navigate('/')
+      clear() 
       };
   
       const clear=()=>{

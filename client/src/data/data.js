@@ -1,4 +1,8 @@
 import {GrLocation} from 'react-icons/gr';
+import {ImLocation2} from 'react-icons/im';
+import {BsFillPhoneVibrateFill} from 'react-icons/bs';
+import {AiFillFileText} from 'react-icons/ai';
+
 const gridEmployeeCountry = (props) => (
   <div className="flex items-center justify-center gap-2">
     <GrLocation />
@@ -74,7 +78,7 @@ export const NincheGrid=[
     textAlign: 'Center',
     template:gridEmployeeCountry
   },
-]
+];
 export const ordersGrid = [
     {    
        field:'shopName',
@@ -130,6 +134,10 @@ export const ordersGrid = [
 
   export const navLink =[
     {
+      name: 'Home',
+      icon: ''
+    },
+    {
       name: 'Mass',
       icon: ''
     },
@@ -140,5 +148,30 @@ export const ordersGrid = [
     {
       name: 'Form',
       icon: ''
+    },
+    {
+      name:'Contact',
+      icon:''
+    }
+  ];
+
+  export const contactData =[
+    {
+      id:1,
+      icon:<ImLocation2 />,
+      name:'address',
+      desc:'Ottar Myoe Thit, Bago'
+    },
+    {
+      id:2,
+      icon:<BsFillPhoneVibrateFill />,
+      name:'phone',
+      desc:'09 111 222 333'
+    },
+    {
+      id:3,
+      icon:<AiFillFileText />,
+      name:'email',
+      desc:'abcdefg@gmail.com'
     },
   ]
