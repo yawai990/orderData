@@ -160,7 +160,7 @@ export const ordersGrid = [
       id:1,
       icon:<ImLocation2 />,
       name:'address',
-      desc:'Ottar Myoe Thit, Bago'
+      desc:'7/3 Quarter,Ottar Myoe Thit, Bago'
     },
     {
       id:2,
