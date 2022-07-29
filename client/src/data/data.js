@@ -2,6 +2,8 @@ import {GrLocation} from 'react-icons/gr';
 import {ImLocation2} from 'react-icons/im';
 import {BsFillPhoneVibrateFill} from 'react-icons/bs';
 import {AiFillFileText} from 'react-icons/ai';
+import {FaFacebook,FaFacebookMessenger} from 'react-icons/fa';
+
 
 const gridEmployeeCountry = (props) => (
   <div className="flex items-center justify-center gap-2">
@@ -175,3 +177,14 @@ export const ordersGrid = [
       desc:'abcdefg@gmail.com'
     },
   ]
+
+export const socialContact = [
+{  id:1,
+  icon:<FaFacebook />,
+  link:''
+},
+{  id:2,
+  icon:<FaFacebookMessenger />,
+  link:''
+}
+]

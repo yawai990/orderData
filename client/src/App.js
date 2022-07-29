@@ -13,10 +13,10 @@ const App =()=>{
             <div className="w-screen flex">
                 <Sidebar />
                 <div className="w-full h-full relative">
-                    <div className="w-8 h-8 fixed top-3 left-5 m-2 md:hidden">
+                    <div className="w-8 h-8 fixed top-3 left-5 m-2 md:hidden z-10">
                     <button 
                     onClick={openSideBar}
-                    className="w-full h-full bg-gray-400 text-white hover:  drop-shadow-2xl flex justify-center items-center p-2 text-2xl rounded-full">
+                    className="w-full h-full bg-blue-500 text-white hover:  drop-shadow-2xl flex justify-center items-center p-2 text-2xl rounded-full">
                     <FaBars />
                     </button>   
                     </div>

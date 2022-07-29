@@ -16,9 +16,10 @@ const Home = () => {
               
                   
 
-                  <p className='my-3 text-center text-gray-900'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti aut maiores.</p>
+                  <p className='text-gray-600 tracking-wide p-1 my-3 text-center text-gray-900'>The luck is gone, the brain is shot, but the soju we still got
+                  </p>
 
-                  <button className='bg-red-400 py-2 px-3 rounded-lg'>meet your new spirit</button>
+                  <button className='bg-blue-600 text-white capitalize hover:drop-shadow-2xl py-2 px-3 rounded-lg'>meet your new spirit</button>
                 </div>
             
               <ImageSlider />

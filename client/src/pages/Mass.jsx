@@ -1,4 +1,3 @@
-import { dataStateChange } from '@syncfusion/ej2-react-grids';
 import React,{useState,useEffect} from 'react';
 import {massData } from '../api';
 import {Grid} from '../components';
@@ -7,8 +6,6 @@ import {ordersGrid} from '../data/data';
 const Datatable = () => {
   
   const [getdata,setGetData] = useState([]);
-
-  const da = getdata.reverse();
 
  async function data(){
   const data = await massData();
@@ -21,7 +18,7 @@ const Datatable = () => {
  },[])
   return (
    <div className="w-full h-full flex justify-center items-center">
-    <Grid title='Mass Customer Data' grid={ordersGrid} data={da}  />
+    <Grid title='Mass Customer Data' grid={ordersGrid} data={getdata}  />
    </div>
   )
 }

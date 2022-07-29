@@ -1,6 +1,7 @@
 import React from 'react';
 import {contactData} from '../data/data';
 
+
 const Contact = () => {
   return (
     <div className='w-full mt-16 md:mt-5 bg-white flex justify-center p-2 md:p-0'>
@@ -24,6 +25,7 @@ const Contact = () => {
                     </div>
                     ))}
                     </div>        
+
         </div>
       </div>
   )
